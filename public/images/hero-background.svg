@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#eff6ff"/>
+      <stop offset="50%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#f5f3ff"/>
+    </linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <circle cx="30" cy="30" r="1.5" fill="#3b82f6" opacity="0.15"/>
+    </pattern>
+    <pattern id="lines" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M0 50 Q25 25 50 50 T100 50" fill="none" stroke="#8b5cf6" stroke-width="0.5" opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  <rect width="1920" height="1080" fill="url(#lines)"/>
+  <!-- Decorative circles -->
+  <circle cx="1600" cy="200" r="300" fill="#3b82f6" opacity="0.03"/>
+  <circle cx="1700" cy="400" r="200" fill="#8b5cf6" opacity="0.04"/>
+  <circle cx="200" cy="800" r="250" fill="#3b82f6" opacity="0.03"/>
+  <!-- Floating shapes -->
+  <rect x="1500" y="600" width="60" height="60" rx="10" fill="#3b82f6" opacity="0.05" transform="rotate(15 1530 630)"/>
+  <rect x="300" y="200" width="40" height="40" rx="8" fill="#8b5cf6" opacity="0.05" transform="rotate(-10 320 220)"/>
+</svg>

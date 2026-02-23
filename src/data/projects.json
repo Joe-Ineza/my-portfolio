@@ -1,0 +1,468 @@
+[
+  {
+    "id": "rwanda-nutrition-mel-dashboard",
+    "title": "Rwanda Child Nutrition MEL Dashboard",
+    "visibility": "public",
+    "domains": ["Health", "MEL", "Data & Analytics"],
+    "subdomains": [
+      "Public Health",
+      "Nutrition",
+      "Child Health",
+      "Monitoring Dashboard",
+      "SQL Analytics",
+      "Program Reporting",
+      "Evidence-Based Decision Making"
+    ],
+    "cardImage": "/images/projects/nutrition_mel_dashboard.png",
+    "cardImageAlt": "Rwanda Child Nutrition MEL Dashboard preview",
+    "role": "Data Analyst",
+    "summary": "Built and deployed an interactive Rwanda nutrition monitoring dashboard from UNICEF JME survey data to support evidence-based program tracking, trend interpretation, method comparison, and equity review for stakeholder reporting.",
+    "problem": "Nutrition indicators were available in multi-sheet source files but not packaged into an accessible, decision-ready tool that answers four core MEL questions: (1) latest burden, (2) trend direction, (3) methodology differences, and (4) stratifier disparities.",
+    "approach": "Ingested and cleaned JME workbook sheets (Primary Data, Age-Adjusted, Notes); modeled data in PostgreSQL with analytics views for snapshot, trends, method comparison, and stratifier analysis; built a Streamlit dashboard with five tabs (Overview, Trends & Change, Method Comparison, Equity/Stratifiers, Definitions & Limitations); added KPI cards with year-over-year deltas, insight callouts, consistent color mapping, and downloadable exports; and deployed to Streamlit Community Cloud with secure Neon PostgreSQL connectivity.",
+    "techStack": [
+      "Python",
+      "Pandas",
+      "SQLAlchemy",
+      "PostgreSQL (Neon)",
+      "SQL Views",
+      "Streamlit",
+      "Plotly",
+      "GitHub",
+      "Streamlit Community Cloud"
+    ],
+    "outcomes": [
+      "Consolidated Rwanda nutrition monitoring into a single dashboard answering four core MEL questions across a 10-year analytical window (latest year: 2020).",
+      "Produced latest KPI snapshot: Stunting 33.1%, Wasting 1.1%, Underweight 7.7%, Severe Wasting 0.2%, Overweight 5.6%.",
+      "Added year-over-year signal layer: declines in stunting (-1.7 pp), wasting (-0.9 pp), underweight (-4.9 pp), severe wasting (-0.1 pp), and increase in overweight (+3.2 pp).",
+      "Enabled method comparison (Primary vs Age-Adjusted) with average gap insight and trend overlay for transparency.",
+      "Improved stakeholder readability with guided interpretation sections, definitions, limitations, and CSV export for offline use."
+    ],
+    "repoUrl": "https://github.com/Joe-Ineza/rwanda-nutrition-mel-dashboard",
+    "demoUrl": "https://rwanda-nutrition-mel-dashboard-dmzgspm8h3znr7bcvznym6.streamlit.app/"
+    
+  },
+  {
+    "id": "clinical-ops-patient-experience-dashboard",
+    "title": "Clinical Operations & Patient Experience Dashboard (Synthea)",
+    "visibility": "public",
+    "domains": ["Health", "MEL", "Data & Analytics"],
+    "subdomains": [
+      "Digital Health",
+      "Clinical Operations",
+      "Patient Experience",
+      "Service Quality",
+      "Health Informatics",
+      "NPS",
+      "Complaint Analysis"
+    ],
+    "cardImage": "/images/projects/clinical_ops_card_image.png",
+    "cardImageAlt": "Clinical Operations and Patient Experience Dashboard preview",
+    "role": "Data Analyst",
+    "summary": "Built and deployed a digital health operations dashboard combining open Synthea clinical records with synthetic patient feedback to monitor consultation volume, referral intensity, and experience signals (NPS, complaints, comments) for service quality review.",
+    "problem": "Open clinical datasets rarely include complete patient-experience fields (NPS, complaint narratives), limiting full service-quality monitoring demonstrations.",
+    "approach": "Loaded Synthea clinical CSVs (encounters, conditions, medications, procedures, patients, providers) into PostgreSQL; engineered analytics views for consultation records, monthly operations KPIs, and feedback aggregation; generated reproducible synthetic feedback records (NPS scores, complaint flags/categories, comment text) linked to encounters; built a narrative Streamlit dashboard with four tabs (Overview & Consultations, Operations Performance, Experience Signals, Comment Explorer); and deployed to Streamlit Community Cloud with secure Neon PostgreSQL connectivity.",
+    "techStack": [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "SQLAlchemy",
+      "PostgreSQL (Neon)",
+      "SQL Views",
+      "Streamlit",
+      "Plotly",
+      "GitHub",
+      "Streamlit Community Cloud"
+    ],
+    "outcomes": [
+      "Modeled and analyzed 53,346 consultations across 6 encounter classes for operational monitoring.",
+      "Tracked service coverage with 1,171 unique patients and workforce activity with 1,104 unique clinicians.",
+      "Exposed operational pressure indicators including 25.8% referral rate for escalation analysis.",
+      "Added experience monitoring with synthetic survey layer: Avg NPS 4.97 and Complaint Rate 65.3% for quality signal tracking.",
+      "Enabled longitudinal review (1912-2020) with complaint-category and comment exploration for targeted action planning."
+    ],
+    "repoUrl": "https://github.com/Joe-Ineza/clinical-ops-patient-experience-dashboard",
+    "demoUrl": "https://clinical-ops-patient-experience-dashboard-happh4mbzrkrappe6rew.streamlit.app/"
+  },
+  {
+    "id": "life-prognosis-management-tool",
+    "title": "Life Prognosis Management Tool",
+    "visibility": "private",
+    "domains": ["Health", "Operations", "Data & Analytics"],
+    "subdomains": [
+      "Digital Health",
+      "HIV Care",
+      "Patient Management",
+      "Life Prognosis",
+      "Health Analytics",
+      "Administrative Reporting"
+    ],
+    "role": "Full implementation (end-to-end development)",
+    "summary": "A patient management tool that estimates lifespan-related prognosis from HIV diagnosis context and provides actionable statistics to support administrative decision-making.",
+    "problem": "Healthcare administrators and care teams needed a structured way to combine registration data and treatment timelines into a consistent prognosis and reporting workflow.",
+    "approach": "Implemented complete system functionality including user login, patient registration confirmation, profile viewing and updates, prognosis calculation using diagnosis date, ART start date, and country-specific data, plus admin report exports and lifespan-related statistics.",
+    "techStack": ["Java", "Shell"],
+    "outcomes": [
+      "Enabled full patient lifecycle flow from registration to profile management within one platform.",
+      "Automated prognosis estimation logic from HIV-related patient timeline inputs.",
+      "Provided administrator-facing downloadable reports for user and lifespan statistics.",
+      "Improved consistency of decision support inputs through structured data capture.",
+      "Delivered a complete implementation from authentication to analytics output."
+    ],
+    "repoUrl": "https://github.com/Joe-Ineza/lifeProgonosisManTool.git"
+  },
+  {
+    "id": "mindora-conversational-therapy-chatbot",
+    "title": "Mindora Conversational Therapy Chatbot",
+    "visibility": "private",
+    "domains": ["Health", "AI"],
+    "subdomains": [
+      "Mental Health",
+      "Conversational AI",
+      "RAG",
+      "Emotion Detection",
+      "AI Safety",
+      "Digital Health"
+    ],
+    "role": "AI/ML Integration Lead",
+    "summary": "A culturally aware conversational mental health support platform for Rwandan youth with multi-provider LLM support, emotion detection, safety controls, and context-aware therapeutic interactions.",
+    "problem": "Mental health assistants often feel generic and culturally distant, while many implementations lack robust safety controls and reliable emotional context handling.",
+    "approach": "Built and integrated a multi-provider AI architecture (Ollama, OpenAI, Groq, Hugging Face), advanced RAG with vector databases, real-time emotion detection, gender-aware response adaptation, safety and crisis checks, and production-ready FastAPI/React/PostgreSQL services with Docker-based deployment.",
+    "techStack": [
+      "Python",
+      "FastAPI",
+      "React",
+      "PostgreSQL",
+      "LangGraph",
+      "ChromaDB",
+      "Qdrant",
+      "Docker",
+      "vLLM",
+      "OpenAI",
+      "Groq",
+      "Ollama",
+      "Hugging Face"
+    ],
+    "outcomes": [
+      "Replaced keyword-based emotion handling with a context-aware LLM Emotion Classifier service.",
+      "Designed and implemented emotion logging models linked to users and conversations for longitudinal insights.",
+      "Enabled culturally grounded, gender-aware responses in natural Kinyarwanda addressing styles.",
+      "Integrated safety layers for crisis detection, content filtering, and ethical response guardrails.",
+      "Delivered scalable architecture with testing, CI/CD readiness, and containerized deployment."
+    ],
+    "privateDisclosure": "This is a professional/work-based project. I can present architecture and outcomes upon request, but I cannot share the source code.",
+    "repoUrl": "https://github.com/mindoraRwanda/MindoraVersionTwo.git"
+  },
+  {
+    "id": "rag-cancer-myth-fact-checking",
+    "title": "RAG System for Cancer Myth Detection and Fact-Checking",
+    "visibility": "private",
+    "domains": ["Health", "AI"],
+    "subdomains": [
+      "RAG",
+      "Oncology",
+      "Medical Fact-Checking",
+      "Health Misinformation",
+      "Evaluation"
+    ],
+    "role": "End-to-end implementation (architecture, retrievers, generators, evaluation, and interface)",
+    "summary": "Built a configurable Retrieval-Augmented Generation system to answer cancer myth and fact-checking questions using verified medical evidence, with side-by-side comparison of retrieval and generation strategies.",
+    "problem": "Cancer misinformation is widespread, while many QA systems provide responses without strong traceable evidence or clear benchmarking across retrieval and generation configurations.",
+    "approach": "Implemented Streamlit and CLI workflows with modular retrievers (OpenAI embeddings with reranking and local SentenceTransformers+FAISS), modular generators (GPT-4o-mini and FLAN-T5), and a full evaluation pipeline including batch scoring, statistical analysis, status checks, and visualization for model comparison.",
+    "techStack": [
+      "Python",
+      "Jupyter Notebook",
+      "Streamlit",
+      "OpenAI API",
+      "SentenceTransformers",
+      "FAISS",
+      "FLAN-T5",
+      "GPT-4o-mini",
+      "Pandas",
+      "Matplotlib"
+    ],
+    "outcomes": [
+      "Delivered an end-to-end RAG workflow for both interactive fact-checking and batch prediction runs.",
+      "Enabled reproducible comparison between cloud and local retrieval-generation stacks.",
+      "Added a complete evaluation suite for metric computation, aggregate analysis, and visualization.",
+      "Improved evidence-grounded answering for cancer myth detection by using verified medical source documents.",
+      "Packaged the system for experimentation, monitoring, and iterative model improvements."
+    ],
+    "repoUrl": "https://github.com/Joe-Ineza/11697-hw6-jkarangw.git"
+  },
+  {
+    "id": "network-level-social-media-interference-east-africa",
+    "title": "Throttled Before the Vote: Network-Level Measurement of Social Media Interference Around Electoral Events in East Africa (2025–2026)",
+    "visibility": "private",
+    "domains": ["Research", "Data & Analytics"],
+    "subdomains": [
+      "Election Monitoring",
+      "Network Interference Measurement",
+      "Digital Repression",
+      "DNS Throttling",
+      "Temporal Analysis"
+    ],
+    "role": "Data Analyst (Ongoing)",
+    "summary": "An ongoing network measurement study analyzing social media interference patterns in Kenya, Uganda, and Tanzania around electoral periods using large-scale OONI measurements.",
+    "problem": "Although election-period internet interference is increasingly documented, technical evidence on specific degradation mechanisms and timing dynamics remains under-characterized in empirical literature.",
+    "approach": "Analyzes 52,676 OONI measurements collected between January 2025 and January 2026 across seven platforms (Twitter/X, WhatsApp, Facebook, Telegram, TikTok, YouTube, Instagram), classifying hard blocks versus soft throttling by mechanism and country context, then evaluating temporal escalation signals around key electoral milestones.",
+    "techStack": [
+      "OONI",
+      "Network Measurement",
+      "Statistical Analysis",
+      "Time-Series Analysis",
+      "DNS Interference Analysis"
+    ],
+    "outcomes": [
+      "Identified throttled DNS as the dominant interference mode across all three countries in the study window.",
+      "Separated hard-block events from soft-throttling conditions to improve interpretation of platform availability under interference.",
+      "Detected a statistically significant post-election hard-block escalation pattern around Uganda 2026 election day.",
+      "Produced a replicable, open-measurement methodology intended for future election monitoring studies."
+    ]
+  },
+  {
+    "id": "kinyarwanda-sign-language-recognition-translation",
+    "title": "Project Proposal: Enhancing Real-Time Kinyarwanda Sign Language Recognition and Translation",
+    "visibility": "private",
+    "domains": ["Research", "AI", "Accessibility"],
+    "subdomains": [
+      "Kinyarwanda Sign Language",
+      "Real-Time Translation",
+      "Sequence Modeling",
+      "Data Augmentation",
+      "Computer Vision"
+    ],
+    "role": "Researcher (Ongoing)",
+    "summary": "An ongoing research proposal to improve real-time Kinyarwanda Sign Language recognition and translation into Kinyarwanda text with higher robustness and accuracy.",
+    "problem": "Current KSL recognition approaches remain challenged by subtle sign differences, variable signing durations, and performance drops across diverse environmental conditions.",
+    "approach": "Builds on prior MediaPipe + LSTM baselines and explores stronger sequence-modeling architectures and augmentation strategies to improve sign discrimination, temporal consistency, and real-world generalization.",
+    "techStack": [
+      "Python",
+      "MediaPipe",
+      "LSTM",
+      "Sequence Modeling",
+      "Data Augmentation",
+      "Real-Time Inference"
+    ]
+  },
+  {
+    "id": "kaggle-frame-level-phoneme-recognition-mlp",
+    "title": "Kaggle: Frame-Level Speech Recognition with MLP (MFCC to Phoneme)",
+    "visibility": "private",
+    "domains": ["AI", "Research"],
+    "subdomains": [
+      "Speech Recognition",
+      "Phoneme Classification",
+      "MFCC Features",
+      "MLP",
+      "Cross-Entropy Optimization"
+    ],
+    "role": "Kaggle Competitor",
+    "summary": "Built a multilayer perceptron pipeline for frame-level phonetic transcription from MFCC features in a speech recognition competition setting.",
+    "problem": "The task required accurate frame-level phoneme prediction from raw acoustic features, balancing representation learning and robust class discrimination across phoneme labels.",
+    "approach": "Developed and tuned an MLP-based classifier for MFCC frame inputs, optimized with cross-entropy loss and gradient-based training to improve phoneme-level prediction quality.",
+    "techStack": [
+      "Python",
+      "Deep Learning",
+      "MLP",
+      "MFCC",
+      "Kaggle"
+    ],
+    "outcomes": [
+      "Completed competition run for frame-level speech recognition (Aug 29, 2025 - Sep 20, 2025).",
+      "Achieved leaderboard performance of 84.908%.",
+      "Delivered a reproducible phoneme classification workflow for acoustic frame modeling.",
+      "Kaggle profile: https://www.kaggle.com/joeineza"
+    ],
+    "demoUrl": "https://www.kaggle.com/competitions/11785-hw-1-p-2-fall-2025-main/leaderboard",
+    "demoLabel": "Leaderboard"
+  },
+  {
+    "id": "kaggle-face-verification-cnn",
+    "title": "Kaggle: Face Verification with Position-Invariant CNN Models",
+    "visibility": "private",
+    "domains": ["AI", "Research"],
+    "subdomains": [
+      "Computer Vision",
+      "Face Verification",
+      "CNN",
+      "Position Invariance",
+      "EER Evaluation"
+    ],
+    "role": "Kaggle Competitor",
+    "summary": "Implemented a CNN-based face verification system to determine whether image pairs belong to the same person under positional variation.",
+    "problem": "Face images are rarely perfectly centered, so verification models must remain reliable despite translational variation and other visual shifts.",
+    "approach": "Trained and evaluated convolutional models for pairwise face verification, targeting robust feature learning and low Equal Error Rate (EER).",
+    "techStack": [
+      "Python",
+      "Deep Learning",
+      "CNN",
+      "Computer Vision",
+      "Kaggle"
+    ],
+    "outcomes": [
+      "Completed face verification competition cycle (Sep 20, 2025 - Oct 11, 2025).",
+      "Achieved EER score of 0.05715.",
+      "Strengthened model robustness for position-invariant visual recognition tasks.",
+      "Kaggle profile: https://www.kaggle.com/joeineza"
+    ],
+    "demoUrl": "https://www.kaggle.com/competitions/11785-hw-2-p-2-face-verification-fall-2025/leaderboard",
+    "demoLabel": "Leaderboard"
+  },
+  {
+    "id": "kaggle-utterance-to-phoneme-mapping",
+    "title": "Kaggle: Utterance-to-Phoneme Mapping",
+    "visibility": "private",
+    "domains": ["AI", "Research"],
+    "subdomains": [
+      "Speech Recognition",
+      "Sequence Modeling",
+      "Phoneme Decoding",
+      "Levenshtein Distance",
+      "ASR Evaluation"
+    ],
+    "role": "Kaggle Competitor",
+    "summary": "Developed a sequence prediction approach for mapping speech utterances to phoneme outputs under edit-distance-based evaluation.",
+    "problem": "The challenge required accurate phoneme sequence generation from utterance inputs while minimizing transcription distance from ground truth.",
+    "approach": "Built and refined a speech-to-phoneme modeling pipeline with iterative validation against Levenshtein Distance competition metrics.",
+    "techStack": [
+      "Python",
+      "Deep Learning",
+      "Sequence Modeling",
+      "ASR",
+      "Kaggle"
+    ],
+    "outcomes": [
+      "Completed HW3P2 competition window (Oct 11, 2025 - Nov 8, 2025).",
+      "Achieved leaderboard score of 5.39694 (Levenshtein Distance metric).",
+      "Improved sequence-to-sequence transcription performance through iterative tuning.",
+      "Kaggle profile: https://www.kaggle.com/joeineza"
+    ],
+    "demoUrl": "https://www.kaggle.com/competitions/11785-hw-3-p-2-speech-recognition-fall-2025/leaderboard",
+    "demoLabel": "Leaderboard"
+  },
+  {
+    "id": "kaggle-transformer-asr-hw4p2",
+    "title": "Kaggle: Transformer-Based Automatic Speech Recognition",
+    "visibility": "private",
+    "domains": ["AI", "Research"],
+    "subdomains": [
+      "Automatic Speech Recognition",
+      "Transformer",
+      "Character Error Rate",
+      "Sequence Transcription",
+      "Model Evaluation"
+    ],
+    "role": "Kaggle Competitor",
+    "summary": "Built a Transformer-based ASR system for transcript generation and optimization under character-level error metrics.",
+    "problem": "Accurate end-to-end speech transcription requires strong contextual modeling and robust decoding under noisy acoustic variability.",
+    "approach": "Implemented and tuned a Transformer ASR pipeline, iterating on training and decoding decisions to reduce Character Error Rate (CER).",
+    "techStack": [
+      "Python",
+      "Deep Learning",
+      "Transformer",
+      "ASR",
+      "Kaggle"
+    ],
+    "outcomes": [
+      "Completed HW4P2 ASR competition period (Nov 7, 2025 - Dec 6, 2025).",
+      "Achieved leaderboard performance of 26.55450 (CER metric).",
+      "Delivered an end-to-end Transformer transcription workflow for speech recognition tasks.",
+      "Kaggle profile: https://www.kaggle.com/joeineza"
+    ],
+    "demoUrl": "https://www.kaggle.com/competitions/slack-hw-4-p-2-f-25/leaderboard",
+    "demoLabel": "Leaderboard"
+  },
+  {
+    "id": "rwanda-travel-planning-agent",
+    "title": "Rwanda Travel Planning Agent",
+    "visibility": "private",
+    "domains": ["AI", "Operations", "Research"],
+    "subdomains": [
+      "RAG",
+      "Multi-Agent Systems",
+      "ORAS Framework",
+      "Adaptive Control",
+      "Hallucination Verification"
+    ],
+    "role": "Multi-Agent Orchestration, Critic Agent, and LangChain Integration Lead",
+    "summary": "A RAG-enabled travel planning agent for Rwanda with multi-user group conversation support, evaluation workflows, and adaptive control for CMU Agentic AI coursework.",
+    "problem": "Travel planning assistants often lack reliable grounding, coordinated multi-agent behavior, and robust group session handling for collaborative planning scenarios.",
+    "approach": "Built an ORAS-based multi-agent architecture (Planner, Executor, Critic) using GPT-4o, OpenAI embeddings, Pinecone retrieval, and Supabase-backed session management; implemented orchestrator layers, agent message passing, critic-driven groundedness checks, decision policies (approve/revise/replan/escalate), and LangChain-compatible adapters with memory-enabled conversation chains.",
+    "techStack": [
+      "Python",
+      "OpenAI GPT-4o",
+      "OpenAI text-embedding-3-small",
+      "Pinecone",
+      "Supabase (PostgreSQL)",
+      "LangChain",
+      "RAG",
+      "Multi-Agent Systems"
+    ],
+    "outcomes": [
+      "Implemented an integrated ORAS orchestrator with closed-loop planning and execution control.",
+      "Developed critic-driven groundedness evaluation with claim extraction and source verification.",
+      "Added adaptive decision routing across approve, revise, replan, and escalate actions.",
+      "Produced evaluation reports, trace generation workflows, and architecture scalability documentation."
+    ],
+    "repoUrl": "https://github.com/bonheurtuyi/hm2-submission-agentic-ai.git"
+  },
+  {
+    "id": "cybersec-buddy-ai-learning-assistant",
+    "title": "CyberSec Buddy - AI-Powered Cybersecurity Learning Assistant",
+    "visibility": "private",
+    "domains": ["AI", "Education"],
+    "subdomains": [
+      "Cybersecurity Learning",
+      "Semantic Retrieval",
+      "Conversational Tutoring",
+      "Beginner-Focused Education",
+      "CTF Support"
+    ],
+    "role": "End-to-end implementation",
+    "summary": "An intelligent cybersecurity tutoring chatbot that helps beginners learn concepts through context-aware dialogue, semantic retrieval, and real-world examples.",
+    "problem": "Cybersecurity learners often face heavy jargon, fragmented platforms, and limited real-world context, which slows practical skill development.",
+    "approach": "Built a FastAPI + GPT-4 + ChromaDB assistant with conversation memory, platform-specific guidance (picoCTF, HackTheBox, TryHackMe), automated educational content processing, and retrieval-augmented explanations tied to real incidents.",
+    "techStack": [
+      "Python",
+      "FastAPI",
+      "OpenAI GPT-4",
+      "ChromaDB",
+      "RAG",
+      "Vector Search"
+    ],
+    "outcomes": [
+      "Delivered an interactive AI tutor tailored for beginner cybersecurity learning journeys.",
+      "Enabled semantic educational retrieval with context-preserving multi-turn conversations.",
+      "Improved accessibility of cybersecurity concepts with practical analogies and incident-grounded explanations."
+    ],
+    "privateDisclosure": "This is a professional/work-based project. I can present architecture and outcomes upon request, but I cannot share the source code.",
+    "repoUrl": "https://github.com/Joe-Ineza/CyberSecBuddyBot.git",
+    "demoUrl": "https://globalcyberalliance.org/building-ai-tools-that-matter-inside-the-student-experience-at-cmu-africa/",
+    "demoLabel": "Recognition"
+  },
+  {
+    "id": "careertech-navigator-system",
+    "title": "CareerTech Navigator System",
+    "visibility": "private",
+    "domains": ["Education", "Operations"],
+    "subdomains": [
+      "Career Guidance",
+      "Alumni Network",
+      "Professional Preparedness",
+      "Student Platform"
+    ],
+    "role": "End-to-end implementation",
+    "summary": "A comprehensive platform designed to bridge academia and industry at AUCA by connecting students with alumni expertise, personalized career guidance, and preparedness resources.",
+    "problem": "Students faced an underutilized alumni network, limited structured career guidance, and gaps in professional readiness before entering industry.",
+    "approach": "Designed and implemented a full-stack platform using a Vue.js frontend and Spring Boot backend to centralize alumni engagement, personalized support, and career-preparedness workflows.",
+    "techStack": ["Vue.js", "Java", "Spring Boot"],
+    "outcomes": [
+      "Created a centralized student-to-alumni guidance experience for AUCA career development.",
+      "Improved access to personalized career support and professional preparation pathways.",
+      "Delivered both frontend and backend systems as an integrated final-year project solution."
+    ],
+    "repoUrl": "https://github.com/Joe-Ineza/career-guides.git",
+    "demoUrl": "https://www.scribd.com/document/796638311/23559-Ineza-Karangwa-Joseph-Actns-Finalyearprojecct-finalfinal",
+    "demoLabel": "Project Report"
+  }
+]
