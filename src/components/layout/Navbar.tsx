@@ -18,7 +18,7 @@ export function Navbar() {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/75 border-b border-gray-200/80">
+    <header className="sticky top-0 z-50 border-b border-blue-100/80 bg-white/85 backdrop-blur supports-[backdrop-filter]:bg-white/70">
       <nav
         className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
         aria-label="Main navigation"
@@ -27,10 +27,10 @@ export function Navbar() {
           {/* Logo/Name */}
           <Link
             href="/"
-            className="group inline-flex items-center gap-3 text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded"
+            className="group inline-flex items-center gap-3 text-xl font-bold text-gray-900 hover:text-blue-700 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded"
             onClick={closeMenu}
           >
-            <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-blue-100 text-blue-700 text-sm font-semibold group-hover:bg-blue-200 transition-colors">
+            <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-blue-200 bg-gradient-to-br from-blue-50 to-blue-100 text-blue-700 text-sm font-semibold group-hover:from-blue-100 group-hover:to-blue-200 transition-colors">
               {siteConfig.author
                 .split(" ")
                 .map((n) => n[0])
@@ -53,7 +53,7 @@ export function Navbar() {
                       "px-4 py-2 rounded-xl text-sm font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2",
                       isActive
                         ? "bg-blue-600 text-white shadow-sm"
-                        : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+                        : "text-gray-600 hover:text-gray-900 hover:bg-blue-50"
                     )}
                     aria-current={isActive ? "page" : undefined}
                   >
@@ -67,7 +67,7 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             type="button"
-            className="md:hidden p-2 rounded-lg text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+            className="md:hidden p-2 rounded-lg text-gray-600 hover:text-gray-900 hover:bg-blue-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
             onClick={toggleMenu}
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
@@ -85,9 +85,9 @@ export function Navbar() {
         {isMenuOpen && (
           <div
             id="mobile-menu"
-            className="md:hidden pb-4 border-t border-gray-200 mt-2 pt-4"
+            className="md:hidden pb-4 border-t border-blue-100 mt-2 pt-4"
           >
-            <ul className="space-y-1 bg-gray-50 rounded-xl p-2 border border-gray-200">
+            <ul className="space-y-1 bg-white rounded-xl p-2 border border-blue-100 shadow-sm">
               {navLinks.map((link) => {
                 const isActive = pathname === link.href;
                 return (

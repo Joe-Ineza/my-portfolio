@@ -11,16 +11,19 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="py-12 sm:py-20">
+    <div className="py-12 sm:py-20 relative overflow-hidden">
+      <div className="absolute inset-0 -z-10 dotted-grid opacity-35" />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Page Header */}
-        <SectionHeading
-          title="About Me"
-          subtitle="Get to know my background, experience, and what drives me."
-        />
+        <div className="paper-panel p-6 sm:p-8 mb-10">
+          <p className="section-label">Profile</p>
+          <SectionHeading
+            title="About Me"
+            subtitle="Get to know my background, experience, and what drives me."
+          />
+        </div>
 
         {/* Bio Section */}
-        <section className="mb-16" aria-labelledby="bio-heading">
+        <section className="mb-16 paper-panel p-6 sm:p-8" aria-labelledby="bio-heading">
           <h2 id="bio-heading" className="sr-only">
             Biography
           </h2>
@@ -48,7 +51,7 @@ export default function AboutPage() {
 
           <div className="grid gap-6 md:grid-cols-2">
             {/* Programming Languages */}
-            <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+            <div className="note-card p-6">
               <h3 className="font-semibold text-gray-900 mb-3">
                 Programming Languages
               </h3>
@@ -65,7 +68,7 @@ export default function AboutPage() {
                 ].map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full"
+                    className="px-3 py-1 bg-blue-50 border border-blue-200 text-blue-800 text-sm font-medium rounded-full"
                   >
                     {skill}
                   </span>
@@ -74,7 +77,7 @@ export default function AboutPage() {
             </div>
 
             {/* Frameworks & Libraries */}
-            <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+            <div className="note-card p-6">
               <h3 className="font-semibold text-gray-900 mb-3">
                 Frameworks & Libraries
               </h3>
@@ -94,7 +97,7 @@ export default function AboutPage() {
                 ].map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full"
+                    className="px-3 py-1 bg-emerald-50 border border-emerald-200 text-emerald-800 text-sm font-medium rounded-full"
                   >
                     {skill}
                   </span>
@@ -103,7 +106,7 @@ export default function AboutPage() {
             </div>
 
             {/* AI & ML */}
-            <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+            <div className="note-card p-6">
               <h3 className="font-semibold text-gray-900 mb-3">
                 AI & Machine Learning
               </h3>
@@ -118,7 +121,7 @@ export default function AboutPage() {
                 ].map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1 bg-purple-100 text-purple-800 text-sm font-medium rounded-full"
+                    className="px-3 py-1 bg-purple-50 border border-purple-200 text-purple-800 text-sm font-medium rounded-full"
                   >
                     {skill}
                   </span>
@@ -127,7 +130,7 @@ export default function AboutPage() {
             </div>
 
             {/* Tools & Platforms */}
-            <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+            <div className="note-card p-6">
               <h3 className="font-semibold text-gray-900 mb-3">
                 Tools & Platforms
               </h3>
@@ -142,7 +145,7 @@ export default function AboutPage() {
                 ].map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1 bg-orange-100 text-orange-800 text-sm font-medium rounded-full"
+                    className="px-3 py-1 bg-orange-50 border border-orange-200 text-orange-800 text-sm font-medium rounded-full"
                   >
                     {skill}
                   </span>
@@ -190,7 +193,7 @@ export default function AboutPage() {
             ].map((item) => (
               <article
                 key={item.domain}
-                className="bg-white border border-gray-200 rounded-lg p-5 hover:border-blue-300 transition-colors"
+                className="note-card p-5"
               >
                 <div className="flex items-start gap-4">
                   <span
@@ -223,7 +226,7 @@ export default function AboutPage() {
             Leadership & Outreach
           </h2>
 
-          <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-6 border border-blue-100">
+          <div className="paper-panel p-6 bg-gradient-to-br from-blue-50/80 to-indigo-50/70">
             <p className="text-gray-700 leading-relaxed">
               With <strong>9+ years of leadership experience</strong> in youth
               programs and K–12 engineering outreach, I&apos;m passionate about
@@ -240,7 +243,7 @@ export default function AboutPage() {
         </section>
 
         {/* Connect Section */}
-        <section aria-labelledby="connect-heading">
+        <section aria-labelledby="connect-heading" className="paper-panel p-6 sm:p-8">
           <h2
             id="connect-heading"
             className="text-2xl font-bold text-gray-900 mb-6"

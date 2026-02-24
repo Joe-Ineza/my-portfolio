@@ -27,7 +27,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-gray-50/80 border-t border-gray-200">
+    <footer className="bg-gradient-to-b from-white to-blue-50/40 border-t border-blue-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
@@ -69,7 +69,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/projects"
-                  className="text-gray-600 hover:text-gray-900 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded"
+                  className="text-gray-600 hover:text-blue-700 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded"
                 >
                   Projects
                 </Link>
@@ -77,7 +77,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/contact"
-                  className="text-gray-600 hover:text-gray-900 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded"
+                  className="text-gray-600 hover:text-blue-700 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded"
                 >
                   Contact
                 </Link>

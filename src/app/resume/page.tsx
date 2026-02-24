@@ -11,16 +11,19 @@ export const metadata: Metadata = {
 
 export default function ResumePage() {
   return (
-    <div className="py-12 sm:py-20">
+    <div className="py-12 sm:py-20 relative overflow-hidden">
+      <div className="absolute inset-0 -z-10 dotted-grid opacity-35" />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Page Header */}
-        <SectionHeading
-          title="Resume"
-          subtitle="View my professional experience and qualifications, or download a PDF copy."
-        />
+        <div className="paper-panel p-6 sm:p-8 mb-10">
+          <p className="section-label">Professional snapshot</p>
+          <SectionHeading
+            title="Resume"
+            subtitle="View my professional experience and qualifications, or download a PDF copy."
+          />
+        </div>
 
         {/* Download Section */}
-        <div className="mb-12 p-6 bg-blue-50 rounded-xl border border-blue-100">
+        <div className="mb-12 p-6 paper-panel bg-blue-50/70">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div className="flex items-start gap-4">
               <FileText
@@ -48,7 +51,7 @@ export default function ResumePage() {
         </div>
 
         {/* Inline Resume Preview */}
-        <div className="bg-white rounded-xl border border-gray-200 p-8 shadow-sm">
+        <div className="paper-panel p-8">
           {/* Header */}
           <header className="border-b border-gray-200 pb-6 mb-6">
             <h1 className="text-3xl font-bold text-gray-900">
@@ -99,7 +102,7 @@ export default function ResumePage() {
               Education
             </h2>
             <div className="space-y-4">
-              <article className="border-l-2 border-blue-500 pl-4">
+              <article className="note-card p-4">
                 <h3 className="font-semibold text-gray-900">
                   Master of Science in Engineering AI
                 </h3>
@@ -108,7 +111,7 @@ export default function ResumePage() {
                   Focus: Artificial Intelligence, Machine Learning, Human-Centered Technology
                 </p>
               </article>
-              <article className="border-l-2 border-gray-300 pl-4">
+              <article className="note-card p-4">
                 <h3 className="font-semibold text-gray-900">
                   Bachelor of Science in Computer Science
                 </h3>
@@ -123,7 +126,7 @@ export default function ResumePage() {
               Technical Skills
             </h2>
             <div className="grid gap-3 sm:grid-cols-2">
-              <div>
+              <div className="note-card p-4">
                 <h3 className="text-sm font-semibold text-gray-700 mb-2">
                   Languages
                 </h3>
@@ -131,7 +134,7 @@ export default function ResumePage() {
                   Python, TypeScript, JavaScript, Java, SQL
                 </p>
               </div>
-              <div>
+              <div className="note-card p-4">
                 <h3 className="text-sm font-semibold text-gray-700 mb-2">
                   Frameworks
                 </h3>
@@ -139,7 +142,7 @@ export default function ResumePage() {
                   React, Next.js, Node.js, FastAPI, LangChain
                 </p>
               </div>
-              <div>
+              <div className="note-card p-4">
                 <h3 className="text-sm font-semibold text-gray-700 mb-2">
                   AI/ML
                 </h3>
@@ -147,7 +150,7 @@ export default function ResumePage() {
                   RAG Systems, LLMs, TensorFlow, PyTorch, OpenAI API
                 </p>
               </div>
-              <div>
+              <div className="note-card p-4">
                 <h3 className="text-sm font-semibold text-gray-700 mb-2">
                   Tools
                 </h3>
@@ -170,7 +173,7 @@ export default function ResumePage() {
                 "AI & Conversational Assistants",
                 "Cybersecurity Education",
               ].map((domain) => (
-                <li key={domain} className="flex items-center gap-2">
+                <li key={domain} className="flex items-center gap-2 note-card p-3">
                   <span className="w-1.5 h-1.5 bg-blue-600 rounded-full" />
                   <span className="text-gray-700">{domain}</span>
                 </li>
@@ -179,7 +182,7 @@ export default function ResumePage() {
           </section>
 
           {/* Leadership */}
-          <section>
+          <section className="paper-panel p-5 bg-blue-50/60">
             <h2 className="text-xl font-semibold text-gray-900 mb-3">
               Leadership & Outreach
             </h2>

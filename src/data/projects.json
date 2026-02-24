@@ -13,7 +13,7 @@
       "Program Reporting",
       "Evidence-Based Decision Making"
     ],
-    "cardImage": "/images/projects/nutrition_mel_dashboard.png",
+    "cardImage": "/images/projects/nutrition_mel_dashboard_new.png",
     "cardImageAlt": "Rwanda Child Nutrition MEL Dashboard preview",
     "role": "Data Analyst",
     "summary": "Built and deployed an interactive Rwanda nutrition monitoring dashboard from UNICEF JME survey data to support evidence-based program tracking, trend interpretation, method comparison, and equity review for stakeholder reporting.",
@@ -55,7 +55,7 @@
       "NPS",
       "Complaint Analysis"
     ],
-    "cardImage": "/images/projects/clinical_ops_card_image.png",
+    "cardImage": "/images/projects/clinical_ops_card_image_new.png",
     "cardImageAlt": "Clinical Operations and Patient Experience Dashboard preview",
     "role": "Data Analyst",
     "summary": "Built and deployed a digital health operations dashboard combining open Synthea clinical records with synthetic patient feedback to monitor consultation volume, referral intensity, and experience signals (NPS, complaints, comments) for service quality review.",

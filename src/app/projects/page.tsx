@@ -15,13 +15,16 @@ export default function ProjectsPage() {
     useState<Project[]>(allProjects);
 
   return (
-    <div className="py-12 sm:py-20">
+    <div className="py-12 sm:py-20 relative overflow-hidden">
+      <div className="absolute inset-0 -z-10 dotted-grid opacity-40" />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Page Header */}
-        <SectionHeading
-          title="Projects"
-          subtitle="Explore case studies across AI, analytics, research, and product implementation. Use filters to quickly narrow by domain and visibility."
-        />
+        <div className="paper-panel p-6 sm:p-8 mb-8">
+          <p className="section-label">Work archive</p>
+          <SectionHeading
+            title="Projects"
+            subtitle="Explore case studies across AI, analytics, research, and product implementation. Use filters to quickly narrow by domain and visibility."
+          />
+        </div>
 
         {/* Filters */}
         <ProjectFilters
@@ -30,7 +33,7 @@ export default function ProjectsPage() {
         />
 
         {/* Results Count */}
-        <div className="mb-6 flex items-center justify-between gap-4 rounded-xl border border-gray-200 bg-white p-4">
+        <div className="mb-6 flex items-center justify-between gap-4 rounded-xl border border-blue-100 bg-white/95 p-4 shadow-sm">
           <p className="text-sm text-gray-600">
             Showing <span className="font-semibold text-gray-900">{filteredProjects.length}</span> of{" "}
             <span className="font-semibold text-gray-900">{allProjects.length}</span> projects
@@ -46,7 +49,7 @@ export default function ProjectsPage() {
             ))}
           </div>
         ) : (
-          <div className="text-center py-14 rounded-xl border border-dashed border-gray-300 bg-gray-50">
+          <div className="text-center py-14 rounded-xl border border-dashed border-blue-200 bg-blue-50/50">
             <p className="text-gray-700 font-medium">No projects match the selected filters.</p>
             <p className="text-gray-500 mt-2 text-sm">Try resetting one filter and broadening your search.</p>
           </div>

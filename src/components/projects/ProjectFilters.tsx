@@ -66,7 +66,7 @@ export function ProjectFilters({
   const hasActiveFilters = filters.domain || filters.visibility !== "all";
 
   return (
-    <div className="mb-8 p-5 bg-white rounded-xl border border-gray-200 shadow-sm">
+    <div className="mb-8 p-5 bg-white/95 rounded-xl border border-blue-100 shadow-sm">
       <div className="flex flex-wrap items-end gap-6">
         {/* Domain Filter */}
         <div className="flex flex-col sm:flex-row sm:items-center gap-2">
@@ -80,7 +80,7 @@ export function ProjectFilters({
             id="domain-filter"
             value={filters.domain || ""}
             onChange={(e) => handleDomainChange(e.target.value || null)}
-            className="px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white min-w-44"
+            className="px-3 py-2 text-sm border border-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white min-w-44"
             aria-label="Filter by domain"
           >
             <option value="">All Domains</option>
@@ -108,7 +108,7 @@ export function ProjectFilters({
                 className={`px-3 py-1.5 text-sm font-medium rounded-lg transition-colors ${
                   filters.visibility === option
                     ? "bg-blue-600 text-white shadow-sm"
-                    : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-100"
+                    : "bg-white text-gray-700 border border-blue-200 hover:bg-blue-50"
                 }`}
                 role="radio"
                 aria-checked={filters.visibility === option}
