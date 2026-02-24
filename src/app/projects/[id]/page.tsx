@@ -53,7 +53,7 @@ export default async function ProjectPage({
 
   return (
     <div className="page-shell">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
         {/* Back Navigation */}
         <nav className="mb-8">
           <Link

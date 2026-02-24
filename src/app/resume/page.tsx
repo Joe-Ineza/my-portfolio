@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Button, SectionHeading } from "@/components/ui";
 import { siteConfig, bioContent } from "@/lib/config";
-import { Download, FileText, Mail } from "lucide-react";
+import { Download, FileText, Mail, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Resume",
@@ -13,7 +13,7 @@ export default function ResumePage() {
   return (
     <div className="page-shell relative overflow-hidden">
       <div className="absolute inset-0 -z-10 dotted-grid opacity-35" />
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="paper-panel p-6 sm:p-8 mb-10">
           <p className="section-label">Professional snapshot</p>
           <SectionHeading

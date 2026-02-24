@@ -17,7 +17,7 @@ export default function ProjectsPage() {
   return (
     <div className="page-shell relative overflow-hidden">
       <div className="absolute inset-0 -z-10 dotted-grid opacity-40" />
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="paper-panel p-6 sm:p-8 mb-8">
           <p className="section-label">Work archive</p>
           <SectionHeading

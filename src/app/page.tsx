@@ -27,7 +27,7 @@ export default function HomePage() {
         <div className="absolute inset-0 -z-10 dotted-grid opacity-50" />
         <div className="absolute right-0 top-0 h-72 w-72 mesh-orb -translate-y-1/3 translate-x-1/3 rounded-full" />
 
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6">
+        <div className="w-full px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6">
           <div className="grid gap-8 lg:grid-cols-[1.3fr_0.7fr] items-start">
             <div className="paper-panel p-6 sm:p-10">
               <p className="section-label">Portfolio · Data, AI & Human-Centered Technology</p>
@@ -121,7 +121,7 @@ export default function HomePage() {
       </section>
 
       <section className="py-16 sm:py-20 section-divider" aria-labelledby="featured-projects-heading">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
             <div>
               <p className="section-label">Selected Work</p>
@@ -143,7 +143,7 @@ export default function HomePage() {
       </section>
 
       <section className="py-16 sm:py-20 section-divider" aria-labelledby="expertise-heading">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="paper-panel p-6 sm:p-8">
             <p className="section-label text-center">Capability Stack</p>
             <h2 id="expertise-heading" className="mt-2 text-3xl font-bold text-gray-900 text-center">Areas of Expertise</h2>
@@ -178,7 +178,7 @@ export default function HomePage() {
       </section>
 
       <section className="py-16 sm:py-20 section-divider" aria-labelledby="cta-heading">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="paper-panel p-8 sm:p-10 text-center">
             <p className="section-label">Open to collaboration</p>
             <h2 id="cta-heading" className="mt-2 text-3xl font-bold text-gray-900">Let&apos;s Work Together</h2>

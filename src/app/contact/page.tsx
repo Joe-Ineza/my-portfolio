@@ -5,7 +5,7 @@ import { Mail, Github, Linkedin, Clock } from "lucide-react";
 export default function ContactPage() {
   return (
     <div className="page-shell">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
         <SectionHeading
           title="Contact Me"
           subtitle="Feel free to connect through any of the channels below."
