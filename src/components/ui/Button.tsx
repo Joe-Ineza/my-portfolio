@@ -17,11 +17,11 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 
     const variants = {
       primary:
-        "bg-blue-600 text-white hover:bg-blue-700 hover:shadow-md focus:ring-blue-500",
+        "bg-[#5F7A61] text-white hover:bg-[#4F6551] hover:shadow-md focus:ring-[#5F7A61]",
       secondary:
         "bg-gray-800 text-white hover:bg-gray-900 hover:shadow-md focus:ring-gray-500",
       outline:
-        "border-2 border-blue-600 text-blue-600 hover:bg-blue-50 focus:ring-blue-500",
+        "border-2 border-[#5F7A61] text-[#5F7A61] hover:bg-[#EEF3EE] focus:ring-[#5F7A61]",
       ghost:
         "text-gray-700 hover:bg-gray-100 focus:ring-gray-500",
     };

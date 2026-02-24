@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="py-12 sm:py-20 relative overflow-hidden">
+    <div className="page-shell relative overflow-hidden">
       <div className="absolute inset-0 -z-10 dotted-grid opacity-35" />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="paper-panel p-6 sm:p-8 mb-10">
@@ -41,7 +41,7 @@ export default function AboutPage() {
         </section>
 
         {/* Skills & Technologies */}
-        <section className="mb-16" aria-labelledby="skills-heading">
+        <section className="mb-16 section-divider" aria-labelledby="skills-heading">
           <h2
             id="skills-heading"
             className="text-2xl font-bold text-gray-900 mb-6"
@@ -68,7 +68,7 @@ export default function AboutPage() {
                 ].map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1 bg-blue-50 border border-blue-200 text-blue-800 text-sm font-medium rounded-full"
+                    className="px-3 py-1 bg-[#EEF3EE] border border-[#C8D3C9] text-[#4F6551] text-sm font-medium rounded-full"
                   >
                     {skill}
                   </span>
@@ -155,13 +155,13 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Experience Domains */}
-        <section className="mb-16" aria-labelledby="domains-heading">
+        {/* Experience Summary */}
+        <section className="mb-16 section-divider" aria-labelledby="domains-heading">
           <h2
             id="domains-heading"
             className="text-2xl font-bold text-gray-900 mb-6"
           >
-            Industry Experience
+            Experience Summary
           </h2>
 
           <div className="grid gap-4 sm:grid-cols-2">
@@ -170,47 +170,34 @@ export default function AboutPage() {
                 domain: "Data Analytics",
                 description:
                   "Turning raw data into clear narratives, decision-ready insights, and measurable impact stories.",
-                icon: "📊",
               },
               {
                 domain: "Monitoring, Evaluation & Learning (MEL)",
                 description:
                   "Designing data-informed systems that support continuous learning and program effectiveness.",
-                icon: "🧭",
               },
               {
                 domain: "RAG Systems",
                 description:
                   "Building retrieval-augmented solutions that improve answer quality, trust, and usability in AI workflows.",
-                icon: "🧠",
               },
               {
                 domain: "Human-Centered Technology",
                 description:
                   "Creating inclusive digital experiences grounded in user needs, accessibility, and real-world value.",
-                icon: "🤝",
               },
             ].map((item) => (
               <article
                 key={item.domain}
                 className="note-card p-5"
               >
-                <div className="flex items-start gap-4">
-                  <span
-                    className="text-3xl"
-                    role="img"
-                    aria-hidden="true"
-                  >
-                    {item.icon}
-                  </span>
-                  <div>
-                    <h3 className="font-semibold text-gray-900">
-                      {item.domain}
-                    </h3>
-                    <p className="mt-1 text-sm text-gray-600">
-                      {item.description}
-                    </p>
-                  </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900">
+                    {item.domain}
+                  </h3>
+                  <p className="mt-1 text-sm text-gray-600">
+                    {item.description}
+                  </p>
                 </div>
               </article>
             ))}
@@ -218,7 +205,7 @@ export default function AboutPage() {
         </section>
 
         {/* Leadership & Outreach */}
-        <section className="mb-16" aria-labelledby="leadership-heading">
+        <section className="mb-16 section-divider" aria-labelledby="leadership-heading">
           <h2
             id="leadership-heading"
             className="text-2xl font-bold text-gray-900 mb-6"
@@ -226,10 +213,10 @@ export default function AboutPage() {
             Leadership & Outreach
           </h2>
 
-          <div className="paper-panel p-6 bg-gradient-to-br from-blue-50/80 to-indigo-50/70">
+          <div className="paper-panel p-6 bg-gradient-to-br from-[#EEF3EE]/90 to-[#E6EEE7]/75">
             <p className="text-gray-700 leading-relaxed">
               With <strong>9+ years of leadership experience</strong> in youth
-              programs and K–12 engineering outreach, I&apos;m passionate about
+              programs and K-12 engineering outreach, I&apos;m passionate about
               inspiring the next generation of engineers and technologists. I
               believe in making technology education accessible and engaging for
               all students.
@@ -243,7 +230,7 @@ export default function AboutPage() {
         </section>
 
         {/* Connect Section */}
-        <section aria-labelledby="connect-heading" className="paper-panel p-6 sm:p-8">
+        <section aria-labelledby="connect-heading" className="paper-panel p-6 sm:p-8 section-divider">
           <h2
             id="connect-heading"
             className="text-2xl font-bold text-gray-900 mb-6"

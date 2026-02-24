@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function ResumePage() {
   return (
-    <div className="py-12 sm:py-20 relative overflow-hidden">
+    <div className="page-shell relative overflow-hidden">
       <div className="absolute inset-0 -z-10 dotted-grid opacity-35" />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="paper-panel p-6 sm:p-8 mb-10">
@@ -23,11 +23,11 @@ export default function ResumePage() {
         </div>
 
         {/* Download Section */}
-        <div className="mb-12 p-6 paper-panel bg-blue-50/70">
+        <div className="mb-12 p-6 paper-panel bg-[#EEF3EE]/80 section-divider">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div className="flex items-start gap-4">
               <FileText
-                className="w-10 h-10 text-blue-600 flex-shrink-0"
+                className="w-10 h-10 text-[#5F7A61] flex-shrink-0"
                 aria-hidden="true"
               />
               <div>
@@ -42,7 +42,7 @@ export default function ResumePage() {
             <a
               href="/resume.pdf"
               download
-              className="inline-flex items-center px-5 py-2.5 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+              className="inline-flex items-center px-5 py-2.5 bg-[#5F7A61] text-white font-medium rounded-lg hover:bg-[#4F6551] transition-colors focus:outline-none focus:ring-2 focus:ring-[#5F7A61] focus:ring-offset-2"
             >
               <Download className="mr-2 w-5 h-5" aria-hidden="true" />
               Download PDF
@@ -57,13 +57,13 @@ export default function ResumePage() {
             <h1 className="text-3xl font-bold text-gray-900">
               {siteConfig.author}
             </h1>
-            <p className="mt-2 text-lg text-blue-600 font-medium">
+            <p className="mt-2 text-lg text-[#4F6551] font-medium">
               {bioContent.headline}
             </p>
             <div className="mt-4 flex flex-wrap gap-4 text-sm text-gray-600">
               <a
                 href={`mailto:${siteConfig.social.email}`}
-                className="hover:text-blue-600 transition-colors"
+                className="hover:text-[#4F6551] transition-colors"
               >
                 {siteConfig.social.email}
               </a>
@@ -71,7 +71,7 @@ export default function ResumePage() {
                 href={siteConfig.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-blue-600 transition-colors"
+                className="hover:text-[#4F6551] transition-colors"
               >
                 LinkedIn
               </a>
@@ -79,7 +79,7 @@ export default function ResumePage() {
                 href={siteConfig.social.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-blue-600 transition-colors"
+                className="hover:text-[#4F6551] transition-colors"
               >
                 GitHub
               </a>
@@ -174,7 +174,7 @@ export default function ResumePage() {
                 "Cybersecurity Education",
               ].map((domain) => (
                 <li key={domain} className="flex items-center gap-2 note-card p-3">
-                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full" />
+                  <span className="w-1.5 h-1.5 bg-[#5F7A61] rounded-full" />
                   <span className="text-gray-700">{domain}</span>
                 </li>
               ))}
@@ -182,7 +182,7 @@ export default function ResumePage() {
           </section>
 
           {/* Leadership */}
-          <section className="paper-panel p-5 bg-blue-50/60">
+          <section className="paper-panel p-5 bg-[#EEF3EE]/70">
             <h2 className="text-xl font-semibold text-gray-900 mb-3">
               Leadership & Outreach
             </h2>
@@ -193,7 +193,7 @@ export default function ResumePage() {
         </div>
 
         {/* CTA */}
-        <div className="mt-12 text-center">
+        <div className="mt-12 text-center section-divider">
           <p className="text-gray-600 mb-4">
             Interested in discussing opportunities?
           </p>

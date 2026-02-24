@@ -84,7 +84,7 @@ export function ProjectCaseStudy({ project }: ProjectCaseStudyProps) {
                 href={project.demoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-[#5F7A61] text-white rounded-lg hover:bg-[#4F6551] transition-colors"
                 aria-label={`View ${demoLabel.toLowerCase()}`}
               >
                 <ExternalLink className="w-5 h-5" aria-hidden="true" />

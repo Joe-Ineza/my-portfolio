@@ -19,14 +19,14 @@ export function SectionHeading({
   return (
     <div
       className={cn(
-        "mb-10",
+        "mb-8 sm:mb-10",
         centered && "text-center",
         className
       )}
     >
       <div
         className={cn(
-          "mb-4 h-1 w-12 rounded-full bg-blue-600",
+          "mb-4 h-1 w-12 rounded-full bg-[#5F7A61]",
           centered && "mx-auto"
         )}
         aria-hidden="true"
@@ -35,7 +35,7 @@ export function SectionHeading({
         {title}
       </h2>
       {subtitle && (
-        <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+        <p className="mt-3 text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
           {subtitle}
         </p>
       )}

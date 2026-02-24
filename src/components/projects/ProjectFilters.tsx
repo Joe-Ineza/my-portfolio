@@ -66,7 +66,7 @@ export function ProjectFilters({
   const hasActiveFilters = filters.domain || filters.visibility !== "all";
 
   return (
-    <div className="mb-8 p-5 bg-white/95 rounded-xl border border-blue-100 shadow-sm">
+    <div className="mb-8 p-5 bg-white/95 rounded-xl border border-[#DDE5DE] shadow-sm">
       <div className="flex flex-wrap items-end gap-6">
         {/* Domain Filter */}
         <div className="flex flex-col sm:flex-row sm:items-center gap-2">
@@ -80,7 +80,7 @@ export function ProjectFilters({
             id="domain-filter"
             value={filters.domain || ""}
             onChange={(e) => handleDomainChange(e.target.value || null)}
-            className="px-3 py-2 text-sm border border-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white min-w-44"
+            className="px-3 py-2 text-sm border border-[#C8D3C9] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5F7A61] focus:border-transparent bg-white min-w-44"
             aria-label="Filter by domain"
           >
             <option value="">All Domains</option>
@@ -107,8 +107,8 @@ export function ProjectFilters({
                 onClick={() => handleVisibilityChange(option)}
                 className={`px-3 py-1.5 text-sm font-medium rounded-lg transition-colors ${
                   filters.visibility === option
-                    ? "bg-blue-600 text-white shadow-sm"
-                    : "bg-white text-gray-700 border border-blue-200 hover:bg-blue-50"
+                    ? "bg-[#5F7A61] text-white shadow-sm"
+                    : "bg-white text-gray-700 border border-[#C8D3C9] hover:bg-[#EEF3EE]"
                 }`}
                 role="radio"
                 aria-checked={filters.visibility === option}
@@ -124,7 +124,7 @@ export function ProjectFilters({
           <button
             type="button"
             onClick={clearFilters}
-            className="text-sm text-blue-600 hover:text-blue-700 font-medium"
+            className="text-sm text-[#5F7A61] hover:text-[#4F6551] font-medium"
           >
             Reset filters
           </button>

@@ -2,7 +2,11 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1f2933;
+  --accent: #5f7a61;
+  --accent-strong: #4f6551;
+  --accent-soft: #eef3ee;
+  --accent-border: #c8d3c9;
 }
 
 @theme inline {
@@ -17,8 +21,11 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
   background-image:
-    radial-gradient(circle at top left, #eff6ff 0%, rgba(239, 246, 255, 0) 38%),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(248, 250, 252, 0.9));
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(249, 251, 249, 0.96)),
+    radial-gradient(circle at top left, rgba(238, 243, 238, 0.75) 0%, rgba(238, 243, 238, 0) 42%);
+  background-size: auto, auto;
+  background-position: center, top left;
+  background-repeat: no-repeat;
 }
 
 /* Smooth scrolling */
@@ -28,7 +35,7 @@ html {
 
 /* Focus visible outline for accessibility */
 *:focus-visible {
-  outline: 2px solid #2563eb;
+  outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
 
@@ -37,7 +44,7 @@ html {
   position: absolute;
   top: -100%;
   left: 0;
-  background: #2563eb;
+  background: var(--accent);
   color: white;
   padding: 0.5rem 1rem;
   z-index: 100;
@@ -66,7 +73,7 @@ article {
   border-radius: 1rem;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.93));
-  box-shadow: 0 10px 30px -24px rgba(30, 64, 175, 0.25);
+  box-shadow: 0 10px 30px -24px rgba(95, 122, 97, 0.35);
 }
 
 .note-card {
@@ -77,8 +84,8 @@ article {
 
 .note-card:hover {
   transform: translateY(-2px);
-  border-color: #bfdbfe;
-  box-shadow: 0 8px 24px -20px rgba(37, 99, 235, 0.4);
+  border-color: var(--accent-border);
+  box-shadow: 0 8px 24px -20px rgba(95, 122, 97, 0.45);
 }
 
 .section-label {
@@ -86,15 +93,15 @@ article {
   text-transform: uppercase;
   letter-spacing: 0.14em;
   font-weight: 700;
-  color: #1d4ed8;
+  color: var(--accent);
 }
 
 .info-chip {
   display: flex;
   flex-direction: column;
-  border: 1px dashed #bfdbfe;
+  border: 1px dashed var(--accent-border);
   border-radius: 0.8rem;
-  background: #f8fbff;
+  background: var(--accent-soft);
   padding: 0.7rem 0.9rem;
 }
 
@@ -111,15 +118,40 @@ article {
 }
 
 .dotted-grid {
-  background-image: radial-gradient(#dbeafe 0.9px, transparent 0.9px);
+  background-image: radial-gradient(#d8e1d9 0.9px, transparent 0.9px);
   background-size: 22px 22px;
 }
 
 .mesh-orb {
   background:
-    radial-gradient(circle at 25% 25%, rgba(147, 197, 253, 0.45), transparent 60%),
-    radial-gradient(circle at 75% 75%, rgba(59, 130, 246, 0.32), transparent 62%),
-    radial-gradient(circle at 55% 35%, rgba(199, 210, 254, 0.35), transparent 58%);
+    radial-gradient(circle at 25% 25%, rgba(200, 211, 201, 0.55), transparent 60%),
+    radial-gradient(circle at 75% 75%, rgba(95, 122, 97, 0.28), transparent 62%),
+    radial-gradient(circle at 55% 35%, rgba(229, 236, 230, 0.5), transparent 58%);
+}
+
+.page-shell {
+  padding-top: 1rem;
+  padding-bottom: 4.5rem;
+}
+
+@media (min-width: 640px) {
+  .page-shell {
+    padding-top: 1.5rem;
+    padding-bottom: 5.5rem;
+  }
+}
+
+.section-divider {
+  border-top: 1px solid #e6ece7;
+  padding-top: 2.25rem;
+  margin-top: 2.25rem;
+}
+
+@media (min-width: 640px) {
+  .section-divider {
+    padding-top: 2.75rem;
+    margin-top: 2.75rem;
+  }
 }
 
 /* Custom scrollbar */

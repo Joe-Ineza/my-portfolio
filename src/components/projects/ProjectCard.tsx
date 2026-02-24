@@ -17,7 +17,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
   return (
     <article
-      className="group relative bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-200 hover:border-blue-300 overflow-hidden"
+      className="group relative bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-200 hover:border-[#C8D3C9] overflow-hidden"
       aria-labelledby={`project-title-${project.id}`}
     >
       {project.cardImage && (
@@ -50,11 +50,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
       {/* Project Title */}
       <h3
         id={`project-title-${project.id}`}
-        className="text-xl font-semibold text-gray-900 pr-20 group-hover:text-blue-600 transition-colors"
+        className="text-xl font-semibold text-gray-900 pr-20 group-hover:text-[#4F6551] transition-colors"
       >
         <Link
           href={`/projects/${project.id}`}
-          className="after:absolute after:inset-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 rounded-xl"
+          className="after:absolute after:inset-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#5F7A61] focus-visible:ring-offset-2 rounded-xl"
         >
           {project.title}
         </Link>
@@ -134,7 +134,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               href={project.demoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-[#5F7A61] hover:text-[#4F6551] transition-colors"
               aria-label={`View ${project.title} ${demoLabel.toLowerCase()}`}
             >
               <ExternalLink className="w-4 h-4" aria-hidden="true" />
