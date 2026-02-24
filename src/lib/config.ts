@@ -3,7 +3,7 @@ import { SiteMetadata } from "@/types";
 export const siteConfig: SiteMetadata = {
   title: "Joseph Ineza Karangwa | Portfolio",
   description:
-    "Software Engineer specializing in AI and human-centered technology, focused on data storytelling, RAG systems, and impactful digital products across education, health, and social impact.",
+    "AI Engineer with a background in Software Engineering and Human-centered Technology, focused on data storytelling, RAG systems, and impactful digital products across education, health, and social impact.",
   author: "Joseph Ineza Karangwa",
   siteUrl: "",
   social: {
@@ -36,10 +36,10 @@ export const projectDomains = [
 
 // Bio content for the About page
 export const bioContent = {
-  headline: "Software Engineer | AI & Human-Centered Technology",
+  headline: "AI Engineer | Software Engineer",
   paragraphs: [
-    "Data Story Creator building human-centered technology at the intersection of software engineering, AI, and measurable impact.",
-    "I am a software engineer with a strong passion for AI, currently pursuing a Master's degree in Engineering AI, and focused on creating practical solutions that improve real user outcomes.",
+    "Data Story Creator building human-centered technology at the intersection of AI, software engineering, and measurable impact.",
+    "I am an AI Engineer with a background in software engineering, currently pursuing a Master's degree in Engineering AI, and focused on creating practical solutions that improve real user outcomes.",
     "My experience spans full-stack development, AI integration, RAG systems, and conversational assistants across EdTech, HealthTech, SocialTech, and cybersecurity education.",
     "I also bring 9+ years of leadership in youth programs and K–12 engineering outreach, which shapes my approach to accessible and inclusive product design.",
   ],
