@@ -62,12 +62,6 @@ export default function ResumePage() {
             </p>
             <div className="mt-4 flex flex-wrap gap-4 text-sm text-gray-600">
               <a
-                href={`mailto:${siteConfig.social.email}`}
-                className="hover:text-[#4F6551] transition-colors"
-              >
-                {siteConfig.social.email}
-              </a>
-              <a
                 href={siteConfig.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
