@@ -13,22 +13,6 @@ export default function ContactPage() {
 
         <div className="space-y-6 section-divider">
           <a
-            href={`mailto:${siteConfig.social.email}`}
-            className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors group"
-          >
-            <Mail
-              className="w-6 h-6 text-[#5F7A61] flex-shrink-0 mt-0.5"
-              aria-hidden="true"
-            />
-            <div>
-              <h2 className="font-medium text-gray-900 group-hover:text-[#4F6551] transition-colors">
-                Email
-              </h2>
-              <p className="text-gray-600 text-sm">{siteConfig.social.email}</p>
-            </div>
-          </a>
-
-          <a
             href={siteConfig.social.github}
             target="_blank"
             rel="noopener noreferrer"
